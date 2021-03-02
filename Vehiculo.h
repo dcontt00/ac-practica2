@@ -25,7 +25,7 @@ private:
 
 
 public:
-    Vehiculo(string, int, bool, int, bool, int,bool,string,string,bool,bool,bool,int,string,string);
+    Vehiculo(string, int, bool, int, bool, string, string, bool, bool, bool, int, string, string);
     bool esBicicleta();
     bool esTriciclo();
     bool esMotocicleta();

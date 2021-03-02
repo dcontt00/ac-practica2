@@ -18,7 +18,7 @@
  * @param rpc Reparación
  * @param mtrl Matricula
  */
-Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, string clr, bool als, bool rct, bool tA, bool lmtr int nV, string rpc, string mtl) {
+Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, string clr, bool als, bool rct, bool tA, bool lmtr, int nV, string rpc, string mtl) {
     nombre = nbr;
     numRuedas = nR;
     motor = mtr;

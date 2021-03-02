@@ -13,11 +13,12 @@
  * @param als Alas
  * @param rct reactores
  * @param tA Tren de Aterrizaje
+ * @param lmtr Locomotora
  * @param nV Número de Vagones
  * @param rpc Reparación
  * @param mtrl Matricula
  */
-Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, string clr, bool als, bool rct, bool tA, int nV, string rpc, string mtrl) {
+Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, string clr, bool als, bool rct, bool tA, bool lmtr int nV, string rpc, string mtl) {
     nombre = nbr;
     numRuedas = nR;
     motor = mtr;
@@ -28,9 +29,10 @@ Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, st
     alas = als;
     reactores = rct;
     trenAterrizaje = tA;
+    locomotora = lmtr;
     numVagones = nV;
     reparacion = rpc;
-    matricula = mtrl;
+    matricula = mtl;
 }
 
 /**

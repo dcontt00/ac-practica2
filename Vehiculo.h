@@ -19,13 +19,14 @@ private:
     bool alas;
     bool reactores;
     bool trenAterrizaje;
+    bool locomotora;
     int numVagones;
     string reparacion;
     string matricula;
 
 
 public:
-    Vehiculo(string, int, bool, int, bool, string, string, bool, bool, bool, int, string, string);
+    Vehiculo(string, int, bool, int, bool, string, string, bool, bool, bool, bool, int, string, string);
     bool esBicicleta();
     bool esTriciclo();
     bool esMotocicleta();

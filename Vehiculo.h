@@ -26,8 +26,13 @@ private:
 
 public:
     Vehiculo(string, int, bool, int, bool, int,bool,string,string,bool,bool,bool,int,string,string);
-
-
+    bool esBicicleta();
+    bool esTriciclo();
+    bool esMotocicleta();
+    bool esCoche();
+    bool esCocheDeportivo();
+    bool esAvion();
+    bool esTren();
 };
 
 #endif // VEHICULO_H

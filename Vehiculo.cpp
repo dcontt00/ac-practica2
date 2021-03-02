@@ -60,11 +60,10 @@ bool Vehiculo::esBicicleta() {
  */
 bool Vehiculo::esTriciclo() {
     return (this->numRuedas == 3) &&
-            this->motor &&
-           (this->potenciaMotor >= 80) &&
-           (this->potenciaMotor <= 450) &&
-           this->combustible  &&
-           (this->tipoCombustible == "Eléctrico" || this->tipoCombustible == "Gasolina" || this->tipoCombustible == "Diesel" || this->tipoCombustible == "Híbrido" ) &&
+           !this->motor &&
+           (this->potenciaMotor == 0) &&
+           !this->combustible  &&
+           (this->tipoCombustible == "") &&
            !this->alas &&
            !this->reactores &&
            !this->trenAterrizaje &&
@@ -79,7 +78,19 @@ bool Vehiculo::esTriciclo() {
  * @return
  */
 bool Vehiculo::esMotocicleta() {
-
+    return (this->numRuedas == 2) &&
+    this->motor &&
+    (this->potenciaMotor >= 80) &&
+    (this->potenciaMotor <= 450) &&
+    this->combustible  &&
+    (this->tipoCombustible == "Eléctrico" || this->tipoCombustible == "Gasolina" || this->tipoCombustible == "Diesel" || this->tipoCombustible == "Híbrido" ) &&
+    !this->alas &&
+    !this->reactores &&
+    !this->trenAterrizaje &&
+    !this->locomotora &&
+    (this->numVagones == 0) &&
+    (this->reparacion == "kit de reparacion de pinchazos") &&
+    (this->matricula == "");
 }
 
 /**

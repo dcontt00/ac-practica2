@@ -1,35 +1,12 @@
-#include "mainwindow.h"
-#include <UI.h>
-#include <QApplication>
-#include <QVBoxLayout>
-#include <QPushButton>
-#include <QLineEdit>
-#include <iostream>
-#include <QLabel>
-#include <QComboBox>
-#include <QSlider>
-#include <QCheckBox>
-#include <QSpinBox>
-
-
-using namespace std;
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    //MainWindow w;
-    UI ui=UI(a);
-
+#include "UI.h"
+UI::UI(QApplication a){
     ////////////////Ventana principal//////////////
-    QWidget w;
-    w.setWindowTitle("Vehiculos");
-    w.resize(200,200);
+    ventanaPrincipal.setWindowTitle("Vehiculos");
+    QVBoxLayout layout(&ventanaPrincipal);
 
-    QVBoxLayout layout(&w);
-
-    QPushButton boton1("Crear vehiculo");
-    QPushButton boton2("Mostrar lista");
-    QPushButton boton3("Salir");
+    boton1.setText("Crear vehiculo");
+    boton2.setText(" Mostrar lista");
+    boton3.setText("Salir");
     boton1.resize(150,30);
     boton2.resize(150,30);
     boton3.resize(150,30);
@@ -37,18 +14,11 @@ int main(int argc, char *argv[])
     layout.addWidget(&boton2);
     layout.addWidget(&boton3);
 
-
-
-   //////Ventan creacion vehiculo//////////
-    QWidget ventanaCrearVehiculo;
+    //////Ventan creacion vehiculo//////////
     ventanaCrearVehiculo.setWindowTitle("Crear vehiculo");
-    ventanaCrearVehiculo.resize(400,200);
     QVBoxLayout layout2(&ventanaCrearVehiculo);
 
-    QPushButton boton4("Crear vehículo");
-
-    //Labels
-    QLabel labelNombre, labelRuedas, labelMotor, labelPotenciaMotor,labelCombustible, labelTipoCombustible, labelColor, labelAlas, labelReactores,labelTrenAterrizaje, labelLocomotora, labelVagones, labelReparacion, labelMatricula;
+    // Labels
     labelNombre.setText("Nombre del vehiculo");
     labelRuedas.setText("Numero de ruedas");
     labelMotor.setText("Tiene motor?");
@@ -65,34 +35,22 @@ int main(int argc, char *argv[])
     labelMatricula.setText("Matricula");
 
 
-    QLineEdit txtNombre;
-
-
-    QCheckBox checkMotor, checkCombustible, checkAlas, checkReactores, checkTrenAterrizaje, checkLocomotora;
-    QSlider sliderPotenciaMotor(Qt::Horizontal);
-    sliderPotenciaMotor.setRange(80,450);
-    QSpinBox spinPotenciaMotor;
     spinPotenciaMotor.setRange(80,450);
     QObject::connect(&spinPotenciaMotor, SIGNAL(valueChanged(int)),&sliderPotenciaMotor, SLOT(setValue(int)));
     QObject::connect(&sliderPotenciaMotor, SIGNAL(valueChanged(int)),&spinPotenciaMotor, SLOT(setValue(int)));
 
-
-    QComboBox seleccionRuedas;
     seleccionRuedas.addItem("2");
     seleccionRuedas.addItem("3");
     seleccionRuedas.addItem("4");
     seleccionRuedas.addItem("6");
     seleccionRuedas.addItem("40");
 
-
-    QComboBox seleccionTipoCombustible;
     seleccionTipoCombustible.addItem("Eléctrico");
     seleccionTipoCombustible.addItem("Gasolina");
     seleccionTipoCombustible.addItem("Diesel");
     seleccionTipoCombustible.addItem("Híbrido");
     seleccionTipoCombustible.addItem("queroseno");
 
-    QComboBox seleccionColor;
     seleccionColor.addItem("Blanco");
     seleccionColor.addItem("Negro");
     seleccionColor.addItem("Rojo");
@@ -101,10 +59,8 @@ int main(int argc, char *argv[])
     seleccionColor.addItem("Verde");
 
 
-    QComboBox seleccionReparacion;
     seleccionReparacion.addItem("Rueda repuesto");
     seleccionReparacion.addItem("Kit reparacion");
-
 
 
     layout2.addWidget(&labelNombre);
@@ -150,28 +106,13 @@ int main(int argc, char *argv[])
 
     layout2.addWidget(&labelMatricula);
 
-    layout2.addWidget(&boton4);
-
-
-
-    /////Ventana mostrar vehiculos///////
-    QWidget ventanaMostrarVehiculos;
-    ventanaMostrarVehiculos.setWindowTitle("Lista Vehiculos");
-    ventanaMostrarVehiculos.resize(400,200);
-    QVBoxLayout layout3(&ventanaMostrarVehiculos);
 
 
 
 
     QObject::connect(&boton1, SIGNAL(clicked()),&ventanaCrearVehiculo, SLOT(show()));
-    QObject::connect(&boton2, SIGNAL(clicked()),&ventanaMostrarVehiculos, SLOT(show()));
     QObject::connect(&boton3, SIGNAL(clicked()),&a, SLOT(quit()));
 
 
-    w.show();
-
-
-
-   cout<<s<<endl;
-    return a.exec();
+    ventanaPrincipal.show();
 }

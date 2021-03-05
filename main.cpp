@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     //MainWindow w;
-    UI ui=UI(a);
+    //UI ui=UI(a);
 
     ////////////////Ventana principal//////////////
     QWidget w;
@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
     layout.addWidget(&boton1);
     layout.addWidget(&boton2);
     layout.addWidget(&boton3);
+
 
 
 
@@ -153,6 +154,10 @@ int main(int argc, char *argv[])
     layout2.addWidget(&boton4);
 
 
+    QObject::connect(&boton1, SIGNAL(clicked()),&ventanaCrearVehiculo, SLOT(show()));
+    QObject::connect(&boton4, SIGNAL(clicked()),&txtNombre, SLOT(displayText()));
+
+
 
     /////Ventana mostrar vehiculos///////
     QWidget ventanaMostrarVehiculos;
@@ -161,17 +166,22 @@ int main(int argc, char *argv[])
     QVBoxLayout layout3(&ventanaMostrarVehiculos);
 
 
-
-
-    QObject::connect(&boton1, SIGNAL(clicked()),&ventanaCrearVehiculo, SLOT(show()));
     QObject::connect(&boton2, SIGNAL(clicked()),&ventanaMostrarVehiculos, SLOT(show()));
+
+
+
+
+
+
+
+
+
+
     QObject::connect(&boton3, SIGNAL(clicked()),&a, SLOT(quit()));
-
-
     w.show();
+    txtNombre.displayText();
 
 
-
-   cout<<s<<endl;
     return a.exec();
+
 }

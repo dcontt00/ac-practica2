@@ -1,7 +1,10 @@
 #include "UI.h"
-UI::UI(QApplication a){
+
+UI::UI(QApplication& a){
     ////////////////Ventana principal//////////////
     ventanaPrincipal.setWindowTitle("Vehiculos");
+    ventanaPrincipal.setWindowTitle("Vehiculos");
+    ventanaPrincipal.resize(200,200);
     QVBoxLayout layout(&ventanaPrincipal);
 
     boton1.setText("Crear vehiculo");
@@ -115,4 +118,5 @@ UI::UI(QApplication a){
 
 
     ventanaPrincipal.show();
+    a.exec();
 }

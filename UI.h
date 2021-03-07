@@ -22,9 +22,27 @@ private:
     QPushButton boton3;
     QWidget ventanaPrincipal;
     QWidget ventanaCrearVehiculo;
-    QLabel labelNombre, labelRuedas, labelMotor, labelPotenciaMotor,labelCombustible, labelTipoCombustible, labelColor, labelAlas, labelReactores,labelTrenAterrizaje, labelLocomotora, labelVagones, labelReparacion, labelMatricula;
+    QLabel labelNombre,
+           labelRuedas,
+           labelMotor,
+           labelPotenciaMotor,
+           labelCombustible,
+           labelTipoCombustible,
+           labelColor,
+           labelAlas,
+           labelReactores,
+           labelTrenAterrizaje,
+           labelLocomotora,
+           labelVagones,
+           labelReparacion,
+           labelMatricula;
     QLineEdit txtNombre;
-    QCheckBox checkMotor, checkCombustible, checkAlas, checkReactores, checkTrenAterrizaje, checkLocomotora;
+    QCheckBox checkMotor,
+              checkCombustible,
+              checkAlas,
+              checkReactores,
+              checkTrenAterrizaje,
+              checkLocomotora;
     QSlider sliderPotenciaMotor;
     QSpinBox spinPotenciaMotor;
     QComboBox seleccionRuedas;
@@ -33,7 +51,7 @@ private:
     QComboBox seleccionReparacion;
 
 public:
-    UI(QApplication);
+    UI(QApplication&);
 };
 
 #endif // UI_H

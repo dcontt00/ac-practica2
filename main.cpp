@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include <UI.h>
+#include "UI.h"
 #include <QApplication>
 #include <QVBoxLayout>
 #include <QPushButton>
@@ -11,15 +11,13 @@
 #include <QCheckBox>
 #include <QSpinBox>
 
-
-using namespace std;
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     //MainWindow w;
-    //UI ui=UI(a);
+    UI ui(a);
 
+    /*
     ////////////////Ventana principal//////////////
     QWidget w;
     w.setWindowTitle("Vehiculos");
@@ -167,21 +165,11 @@ int main(int argc, char *argv[])
 
 
     QObject::connect(&boton2, SIGNAL(clicked()),&ventanaMostrarVehiculos, SLOT(show()));
-
-
-
-
-
-
-
-
-
-
     QObject::connect(&boton3, SIGNAL(clicked()),&a, SLOT(quit()));
     w.show();
     txtNombre.displayText();
 
-
-    return a.exec();
+    */
+    return 0;
 
 }

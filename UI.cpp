@@ -20,7 +20,7 @@ UI::UI(QApplication& a){
     layout.addWidget(&boton2);
     layout.addWidget(&boton3);
 
-    ////////////////Ventana creacion vehiculo////////////////
+    ////////////////////////////////Ventana creacion vehiculo////////////////////////////////
     ventanaCrearVehiculo.setWindowTitle("Crear vehiculo");
     ventanaCrearVehiculo.resize(250,700);
     QVBoxLayout layout2(&ventanaCrearVehiculo);
@@ -41,19 +41,22 @@ UI::UI(QApplication& a){
     labelReparacion.setText("Reparacion");
     labelMatricula.setText("Matricula");
 
-    ////////////////Potencia del Motor////////////////
-    spinPotenciaMotor.setRange(80,450); //Cuadro de numeros
-    sliderPotenciaMotor.setRange(80,450); //Barra ceslizante
-
-    QObject::connect(&spinPotenciaMotor, SIGNAL(valueChanged(int)),&sliderPotenciaMotor, SLOT(setValue(int)));
-    QObject::connect(&sliderPotenciaMotor, SIGNAL(valueChanged(int)),&spinPotenciaMotor, SLOT(setValue(int)));
-
     ////////////////Numero de Ruedas////////////////
     seleccionRuedas.addItem("2");
     seleccionRuedas.addItem("3");
     seleccionRuedas.addItem("4");
     seleccionRuedas.addItem("6");
     seleccionRuedas.addItem("40");
+
+    ////////////////Check Motor////////////////
+    QObject::connect(&checkMotor,SIGNAL(checked(true)),&sliderPotenciaMotor,SLOT(checkable(true)));
+
+    ////////////////Potencia del Motor////////////////
+    spinPotenciaMotor.setRange(80,450); //Cuadro de numeros
+    sliderPotenciaMotor.setRange(80,450); //Barra ceslizante
+    sliderPotenciaMotor.setOrientation(Qt::Horizontal);
+    QObject::connect(&spinPotenciaMotor, SIGNAL(valueChanged(int)),&sliderPotenciaMotor, SLOT(setValue(int)));
+    QObject::connect(&sliderPotenciaMotor, SIGNAL(valueChanged(int)),&spinPotenciaMotor, SLOT(setValue(int)));
 
     ////////////////Tipo de Combustible////////////////
     seleccionTipoCombustible.addItem("Eléctrico");
@@ -75,47 +78,48 @@ UI::UI(QApplication& a){
     seleccionReparacion.addItem("Kit reparacion");
 
     ////////////////Colocacion////////////////
+    //NOMBRE
     layout2.addWidget(&labelNombre);
     layout2.addWidget(&txtNombre);
-
+    //NUMERO DE RUEDAS
     layout2.addWidget(&labelRuedas);
     layout2.addWidget(&seleccionRuedas);
-
+    //MOTOR
     layout2.addWidget(&labelMotor);
     layout2.addWidget(&checkMotor);
-
+    //POTENCIA
     layout2.addWidget(&labelPotenciaMotor);
     layout2.addWidget(&sliderPotenciaMotor);
     layout2.addWidget(&spinPotenciaMotor);
-
+    //COMBUSTIBLE
     layout2.addWidget(&labelCombustible);
     layout2.addWidget(&checkCombustible);
-
+    //TIPO DE COMBUSTIBLE
     layout2.addWidget(&labelTipoCombustible);
     layout2.addWidget(&seleccionTipoCombustible);
-
+    //COLOR DEL COCHE
     layout2.addWidget(&labelColor);
     layout2.addWidget(&seleccionColor);
-
+    //ALAS
     layout2.addWidget(&labelAlas);
     layout2.addWidget(&checkAlas);
-
+    //REACTORES
     layout2.addWidget(&labelReactores);
     layout2.addWidget(&checkReactores);
-
+    //TREN DE ATERRIZAJE
     layout2.addWidget(&labelTrenAterrizaje);
     layout2.addWidget(&checkTrenAterrizaje);
-
+    //LOCOMOTORA
     layout2.addWidget(&labelLocomotora);
     layout2.addWidget(&checkLocomotora);
-
+    //VAGONES
     layout2.addWidget(&labelVagones);
 
-
+    //REPARACIONES
     layout2.addWidget(&labelReparacion);
     layout2.addWidget(&seleccionReparacion);
 
-
+    //MATRICULA
     layout2.addWidget(&labelMatricula);
 
 

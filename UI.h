@@ -9,6 +9,7 @@
 #include <QSlider>
 #include <QCheckBox>
 #include <QSpinBox>
+#include <QSizePolicy>
 #include <QApplication>
 
 using namespace std;

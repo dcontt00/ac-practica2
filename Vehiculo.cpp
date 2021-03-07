@@ -98,7 +98,19 @@ bool Vehiculo::esMotocicleta() {
  * @return
  */
 bool Vehiculo::esCoche() {
-
+    return (this->numRuedas == 4) &&
+    this->motor &&
+    (this->potenciaMotor >= 80) && 
+    (this->potenciaMotor<= 250) &&
+    this->combustible &&
+    (this->tipoCombustible == "Eléctrico" || this->tipoCombustible == "Gasolina" || this->tipoCombustible == "Diesel" || this->tipoCombustible == "Híbrido" ) &&
+    !this->alas &&
+    !this->reactores &&
+    !this->trenAterrizaje &&
+    !this->locomotora &&
+    (this->numVagones == 0) &&
+    (this->reparacion == "Rueda de repuesto") &&
+    (this->matricula == "");
 }
 
 /**
@@ -106,7 +118,19 @@ bool Vehiculo::esCoche() {
  * @return
  */
 bool Vehiculo::esCocheDeportivo() {
-
+    return (this->numRuedas == 4) &&
+    this->motor &&
+    (this->potenciaMotor >= 80) && 
+    (this->potenciaMotor<= 450) &&
+    this->combustible &&
+    (this->tipoCombustible == "Eléctrico" || this->tipoCombustible == "Gasolina") &&
+    !this->alas &&
+    !this->reactores &&
+    !this->trenAterrizaje &&
+    !this->locomotora &&
+    (this->numVagones == 0) &&
+    (this->reparacion == "kit de reparacion de pinchazos") &&
+    (this->matricula == "");
 }
 
 /**
@@ -114,6 +138,19 @@ bool Vehiculo::esCocheDeportivo() {
  * @return
  */
 bool Vehiculo::esAvion() {
+    return (this->numRuedas == 6) &&
+    this->motor &&
+    (this->potenciaMotor == 450) &&
+    this->combustible &&
+    (this->tipoCombustible == "Queroseno") &&
+    (this->color == "Blanco") &&
+    this->alas &&
+    this->reactores &&
+    this->trenAterrizaje &&
+    !this->locomotora &&
+    (this->numVagones == 0) &&
+    (this->reparacion == "Rueda de repuesto") &&
+    (this->matricula == "");
 
 }
 
@@ -122,5 +159,17 @@ bool Vehiculo::esAvion() {
  * @return
  */
 bool Vehiculo::esTren() {
-
+  return (this->numRuedas == 40) &&
+  this->motor &&
+  (this->potenciaMotor == 450) &&
+  this->combustible &&
+  (this->tipoCombustible == "Eléctrico" || this->tipoCombustible == "Diesel") &&
+  (this->color == "Negro") &&
+  !this->alas &&
+  !this->reactores &&
+  !this->trenAterrizaje &&
+  this->locomotora &&
+  (this->numVagones >= 5 && this->numVagones <= 20) &&
+  (this->reparacion == "Rueda de repuesto") &&
+  (this->matricula == "");
 }

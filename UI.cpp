@@ -26,20 +26,20 @@ UI::UI(QApplication& a){
     QVBoxLayout layout2(&ventanaCrearVehiculo);
 
     ////////////////Textos////////////////
-    labelNombre.setText("Nombre del vehiculo");
-    labelRuedas.setText("Numero de ruedas");
-    labelMotor.setText("Tiene motor?");
-    labelPotenciaMotor.setText("potencia motor");
-    labelCombustible.setText("Tiene combustible?");
+    labelNombre.setText("Nombre del vehículo:");
+    labelRuedas.setText("Número de ruedas:");
+    labelMotor.setText("Tiene motor:");
+    labelPotenciaMotor.setText("Potencia del motor:");
+    labelCombustible.setText("Tiene combustible:");
     labelTipoCombustible.setText("Tipo combustible");
-    labelColor.setText("Color");
-    labelAlas.setText("Tiene Alas?");
-    labelReactores.setText("Tiene Reactores?");
-    labelTrenAterrizaje.setText("Tiene tren de aterrizaje?");
-    labelLocomotora.setText("Tiene locomotora?");
-    labelVagones.setText("número de vagones");
-    labelReparacion.setText("Reparacion");
-    labelMatricula.setText("Matricula");
+    labelColor.setText("Color del vehículo:");
+    labelAlas.setText("Tiene alas:");
+    labelReactores.setText("Tiene reactores:");
+    labelTrenAterrizaje.setText("Tiene tren de aterrizaje:");
+    labelLocomotora.setText("Tiene locomotora:");
+    labelVagones.setText("Número de vagones:");
+    labelReparacion.setText("Sistema de reparación:");
+    labelMatricula.setText("Matrícula:");
 
     ////////////////Numero de Ruedas////////////////
     seleccionRuedas.addItem("2");
@@ -52,11 +52,11 @@ UI::UI(QApplication& a){
     QObject::connect(&checkMotor,SIGNAL(checked(true)),&sliderPotenciaMotor,SLOT(checkable(true)));
 
     ////////////////Potencia del Motor////////////////
-    spinPotenciaMotor.setRange(80,450); //Cuadro de numeros
+    visualPotenciaMotor.setRange(80,450); //Cuadro indicador de potencia
+    visualPotenciaMotor.setFormat("%v");
     sliderPotenciaMotor.setRange(80,450); //Barra ceslizante
     sliderPotenciaMotor.setOrientation(Qt::Horizontal);
-    QObject::connect(&spinPotenciaMotor, SIGNAL(valueChanged(int)),&sliderPotenciaMotor, SLOT(setValue(int)));
-    QObject::connect(&sliderPotenciaMotor, SIGNAL(valueChanged(int)),&spinPotenciaMotor, SLOT(setValue(int)));
+    QObject::connect(&sliderPotenciaMotor, SIGNAL(valueChanged(int)),&visualPotenciaMotor, SLOT(setValue(int)));
 
     ////////////////Tipo de Combustible////////////////
     seleccionTipoCombustible.addItem("Eléctrico");
@@ -89,8 +89,8 @@ UI::UI(QApplication& a){
     layout2.addWidget(&checkMotor);
     //POTENCIA
     layout2.addWidget(&labelPotenciaMotor);
+    layout2.addWidget(&visualPotenciaMotor);
     layout2.addWidget(&sliderPotenciaMotor);
-    layout2.addWidget(&spinPotenciaMotor);
     //COMBUSTIBLE
     layout2.addWidget(&labelCombustible);
     layout2.addWidget(&checkCombustible);

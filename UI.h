@@ -7,8 +7,8 @@
 #include <QLabel>
 #include <QComboBox>
 #include <QSlider>
+#include <QProgressBar>
 #include <QCheckBox>
-#include <QSpinBox>
 #include <QSizePolicy>
 #include <QApplication>
 
@@ -45,7 +45,7 @@ private:
               checkTrenAterrizaje,
               checkLocomotora;
     QSlider sliderPotenciaMotor;
-    QSpinBox spinPotenciaMotor;
+    QProgressBar visualPotenciaMotor;
     QComboBox seleccionRuedas;
     QComboBox seleccionTipoCombustible;
     QComboBox seleccionColor;

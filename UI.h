@@ -21,6 +21,7 @@ private:
     QPushButton boton1;
     QPushButton boton2;
     QPushButton boton3;
+    QPushButton boton4;
     QWidget ventanaPrincipal;
     QWidget ventanaCrearVehiculo;
     QLabel labelNombre,

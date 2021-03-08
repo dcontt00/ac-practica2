@@ -10,12 +10,14 @@ UI::UI(QApplication& a){
     boton1.setText("Crear vehiculo");
     boton2.setText("Mostrar lista");
     boton3.setText("Salir");
+    boton4.setText("Guardar vehiculo");
     boton1.resize(150,30);
     boton2.resize(150,30);
     boton3.resize(150,30);
     boton1.setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     boton2.setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     boton3.setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    boton4.setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     layout.addWidget(&boton1);
     layout.addWidget(&boton2);
     layout.addWidget(&boton3);
@@ -121,6 +123,9 @@ UI::UI(QApplication& a){
 
     //MATRICULA
     layout2.addWidget(&labelMatricula);
+
+    //GUARDAR VEHICULO
+    layout2.addWidget(&boton4);
 
 
     ////////////////Acciones del Resto de Botones////////////////

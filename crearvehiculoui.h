@@ -1,5 +1,6 @@
 #ifndef CREARVEHICULOUI_H
 #define CREARVEHICULOUI_H
+#include <QWidget>
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QLineEdit>
@@ -10,10 +11,9 @@
 #include <QProgressBar>
 #include <QCheckBox>
 #include <QSizePolicy>
-#include <QApplication>
 
 
-class CrearVehiculoUI
+class CrearVehiculoUI: public QWidget
 {
 private:
     QLabel labelNombre,

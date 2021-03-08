@@ -13,7 +13,7 @@
 #include <QCheckBox>
 #include <QSizePolicy>
 #include <QApplication>
-
+#include "crearvehiculoui.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -30,6 +30,7 @@ public:
     QPushButton boton2;
     QPushButton boton3;
     QWidget ventanaPrincipal;
+    CrearVehiculoUi cui;
 
 private slots:
     void on_pushButton_clicked();

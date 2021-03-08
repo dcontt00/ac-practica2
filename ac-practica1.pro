@@ -9,17 +9,20 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    crearvehiculoui.cpp \
     listavehiculos.cpp \
     main.cpp \
     mainwindow.cpp \
     Vehiculo.cpp
 
 HEADERS += \
+    crearvehiculoui.h \
     listavehiculos.h \
     mainwindow.h \
     Vehiculo.h
 
 FORMS += \
+    crearvehiculoui.ui \
     mainwindow.ui
 
 # Default rules for deployment.

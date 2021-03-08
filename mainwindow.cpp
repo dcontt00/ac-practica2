@@ -1,14 +1,30 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
-    //Cuando se inicia la ventana se la pasa al metodo setUp del Objeto UI
     ui->setupUi(this);
 }
-
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+
+}

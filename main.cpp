@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "UI.h"
 #include <QApplication>
 #include <QVBoxLayout>
 #include <QPushButton>
@@ -14,6 +13,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    UI ui(a); //Crea una interfaz a la que le pasa el objeto QApplication
-    return 0;
+    /*UI ui(a);*/ //Crea una interfaz a la que le pasa el objeto QApplication
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
+
+

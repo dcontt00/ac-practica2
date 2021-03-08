@@ -173,3 +173,7 @@ bool Vehiculo::esTren() {
   (this->reparacion == "Rueda de repuesto") &&
   (this->matricula == "");
 }
+
+string Vehiculo::getMatricula(){
+    return matricula;
+}

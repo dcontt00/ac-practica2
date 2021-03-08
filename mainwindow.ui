@@ -14,54 +14,43 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QProgressBar" name="progressBar">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>300</y>
-      <width>401</width>
-      <height>81</height>
+      <x>280</x>
+      <y>110</y>
+      <width>151</width>
+      <height>25</height>
      </rect>
     </property>
-    <property name="contextMenuPolicy">
-     <enum>Qt::CustomContextMenu</enum>
-    </property>
-    <property name="minimum">
-     <number>80</number>
-    </property>
-    <property name="maximum">
-     <number>450</number>
-    </property>
-    <property name="value">
-     <number>80</number>
-    </property>
-    <property name="format">
-     <string>%v</string>
+    <property name="text">
+     <string>Crear vehiculo</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>270</x>
       <y>210</y>
-      <width>160</width>
-      <height>22</height>
+      <width>201</width>
+      <height>25</height>
      </rect>
     </property>
-    <property name="minimum">
-     <number>80</number>
+    <property name="text">
+     <string>Mostrar vehiculos</string>
     </property>
-    <property name="maximum">
-     <number>450</number>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>300</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
     </property>
-    <property name="value">
-     <number>85</number>
-    </property>
-    <property name="sliderPosition">
-     <number>85</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="text">
+     <string>Salir</string>
     </property>
    </widget>
   </widget>
@@ -71,29 +60,12 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>horizontalSlider</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>progressBar</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>336</x>
-     <y>245</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>340</x>
-     <y>339</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

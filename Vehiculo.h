@@ -34,6 +34,7 @@ public:
     bool esCocheDeportivo();
     bool esAvion();
     bool esTren();
+    string getMatricula();
 };
 
 #endif // VEHICULO_H

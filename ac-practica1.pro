@@ -14,14 +14,16 @@ SOURCES += \
     mainwindow.cpp \
     Vehiculo.cpp \
     UI.cpp \
-    VentanaVehiculos.cpp
+    VentanaVehiculos.cpp \
+    crearvehiculoui.cpp
 
 HEADERS += \
     listavehiculos.h \
     mainwindow.h \
     Vehiculo.h \
     UI.h \
-    VentanaVehiculos.h
+    VentanaVehiculos.h \
+    crearvehiculoui.h
 
 FORMS += \
     mainwindow.ui

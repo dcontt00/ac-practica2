@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QSlider" name="horizontalSlider">
+  <widget class="QSlider" name="horizontalSliderMotor">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -22,11 +22,17 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="minimum">
+    <number>80</number>
+   </property>
+   <property name="maximum">
+    <number>450</number>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox">
+  <widget class="QSpinBox" name="spinBoxMotor">
    <property name="geometry">
     <rect>
      <x>200</x>
@@ -35,8 +41,14 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="minimum">
+    <number>80</number>
+   </property>
+   <property name="maximum">
+    <number>450</number>
+   </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="labelMotor">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -49,7 +61,7 @@
     <string>Potencia motor</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="labelNombre">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -62,7 +74,7 @@
     <string>Nombre vehiculo</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEditNombre">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -72,7 +84,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="labelRuedas">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -85,7 +97,7 @@
     <string>Número de ruedas</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBoxRuedas">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -120,7 +132,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QCheckBox" name="checkBox">
+  <widget class="QCheckBox" name="checkBoxMotor">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -133,7 +145,7 @@
     <string>Motor</string>
    </property>
   </widget>
-  <widget class="QCheckBox" name="checkBox_2">
+  <widget class="QCheckBox" name="checkBoxCombustible">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -146,7 +158,7 @@
     <string>Combustible</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBoxCombustible">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -181,7 +193,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="labelCombustible">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -194,7 +206,7 @@
     <string>Tipo combustible</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="labelColor">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -207,7 +219,7 @@
     <string>Color</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_3">
+  <widget class="QComboBox" name="comboBoxColor">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -247,7 +259,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="labelReparacion">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -260,7 +272,7 @@
     <string>Reparación</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_4">
+  <widget class="QComboBox" name="comboBoxReparacion">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -280,7 +292,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="labelMatricula">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -291,6 +303,32 @@
    </property>
    <property name="text">
     <string>Num matrícula</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCrearCoche">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>490</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Crear coche</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditMatricula">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>

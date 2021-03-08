@@ -10,20 +10,26 @@ CONFIG += c++11
 
 SOURCES += \
     crearvehiculoui.cpp \
+    listaui.cpp \
     listavehiculos.cpp \
     main.cpp \
     mainwindow.cpp \
-    Vehiculo.cpp
+    Vehiculo.cpp \
+    mostrarvehiculoui.cpp
 
 HEADERS += \
     crearvehiculoui.h \
+    listaui.h \
     listavehiculos.h \
     mainwindow.h \
-    Vehiculo.h
+    Vehiculo.h \
+    mostrarvehiculoui.h
 
 FORMS += \
     crearvehiculoui.ui \
-    mainwindow.ui
+    listaui.ui \
+    mainwindow.ui \
+    mostrarvehiculoui.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

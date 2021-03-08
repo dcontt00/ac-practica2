@@ -16,6 +16,11 @@ CrearVehiculoUi::~CrearVehiculoUi()
 }
 
 
+void CrearVehiculoUi::on_horizontalSlider_valueChanged(int value){}
+
+void CrearVehiculoUi::on_spinBox_valueChanged(int value){}
+
+void CrearVehiculoUi::on_pushButton_clicked(){}
 
 
 void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()

@@ -2,6 +2,7 @@
 #define CREARVEHICULOUI_H
 
 #include <QWidget>
+#include <QObject>
 #include <iostream>
 #include <string>
 
@@ -17,18 +18,18 @@ public:
     explicit CrearVehiculoUi(QWidget *parent = nullptr);
     ~CrearVehiculoUi();
 
-private slots:
-    void on_horizontalSlider_valueChanged(int value);
+public slots:
+    void on_horizontalSlider_valueChanged(int);
 
-    void on_spinBox_valueChanged(int arg1);
+    void on_spinBox_valueChanged(int);
 
     void on_pushButton_clicked();
 
     void on_pushButtonCrearCoche_clicked();
 
-    void on_horizontalSliderMotor_valueChanged(int value);
+    void on_horizontalSliderMotor_valueChanged(int);
 
-    void on_spinBoxMotor_valueChanged(int arg1);
+    void on_spinBoxMotor_valueChanged(int);
 
 private:
     Ui::CrearVehiculoUi *ui;

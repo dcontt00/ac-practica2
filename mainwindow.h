@@ -14,6 +14,8 @@
 #include <QSizePolicy>
 #include <QApplication>
 #include "crearvehiculoui.h"
+#include "mostrarvehiculoui.h"
+#include "listaui.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE

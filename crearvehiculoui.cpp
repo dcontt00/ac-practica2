@@ -17,7 +17,7 @@ CrearVehiculoUi::CrearVehiculoUi(QWidget *parent) :
     int r;
     for(int i=0;i<3;i++){
         r = rand() % 26;
-        c = 'a' + r;
+        c = 'A' + r;
 
         matricula.push_back(c);
     }

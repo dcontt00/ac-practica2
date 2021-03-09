@@ -27,6 +27,20 @@ private:
 
 public:
     Vehiculo(string, int, bool, int, bool, string, string, bool, bool, bool, bool, int, string, string);
+    string getNombre();
+    string getNumRuedas();
+    string getMotor();
+    string getPotencia();
+    string getCombustible();
+    string getTipoCombustible();
+    string getColor();
+    string getAlas();
+    string getReactores();
+    string getTrenAterrizaje();
+    string getLocomotora();
+    string getNumVagones();
+    string getReparacion();
+    string getMatricula();
     bool esBicicleta();
     bool esTriciclo();
     bool esMotocicleta();
@@ -34,7 +48,7 @@ public:
     bool esCocheDeportivo();
     bool esAvion();
     bool esTren();
-    string getMatricula();
+
 };
 
 #endif // VEHICULO_H

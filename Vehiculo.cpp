@@ -35,6 +35,72 @@ Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, st
     matricula = mtl;
 }
 
+string Vehiculo::getNombre(){
+    return nombre;
+}
+string Vehiculo::getNumRuedas(){
+    return to_string(numRuedas);
+}
+string Vehiculo::getMotor(){
+    if(motor){
+        return "Si";
+    }else{
+        return "No";
+    }
+}
+string Vehiculo::getPotencia();
+string Vehiculo::getCombustible(){
+    if(combustible){
+        return "Si";
+    }else{
+        return "No";
+    }
+}
+string Vehiculo::getTipoCombustible(){
+
+}
+string Vehiculo::getColor(){
+
+}
+string Vehiculo::getAlas(){
+    if(alas){
+        return "Si";
+    }else{
+        return "No";
+    }
+}
+string Vehiculo::getReactores(){
+        if(reactores){
+            return "Si";
+        }else{
+            return "No";
+        }
+}
+
+string Vehiculo::getTrenAterrizaje(){
+    if(trenAterrizaje){
+        return "Si";
+    }else{
+        return "No";
+    }
+}
+string Vehiculo::getLocomotora(){
+    if(locomotora){
+        return "Si";
+    }else{
+        return "No";
+    }
+}
+string Vehiculo::getNumVagones(){
+    return to_string(numVagones);
+}
+string Vehiculo::getReparacion(){
+    return reparacion;
+}
+string Vehiculo::getMatricula(){
+    return matricula;
+}
+
 /**
  * Combrueba si es una bicicleta
  * @return

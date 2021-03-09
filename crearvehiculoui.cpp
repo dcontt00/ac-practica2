@@ -24,6 +24,7 @@ CrearVehiculoUi::CrearVehiculoUi(QWidget *parent) :
 
 
     ui->setupUi(this);
+    this->setWindowTitle("Crear vehiculo");
     ui->lineEditMatricula->setText(QString::fromStdString(matricula));
 }
 

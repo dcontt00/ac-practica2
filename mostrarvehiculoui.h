@@ -17,6 +17,9 @@ public:
     ~MostrarVehiculoUi();
     void setVehiculo(Vehiculo&);
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::MostrarVehiculoUi *ui;
 };

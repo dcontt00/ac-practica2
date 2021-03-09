@@ -5,7 +5,9 @@ MostrarVehiculoUi::MostrarVehiculoUi(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MostrarVehiculoUi)
 {
+
     ui->setupUi(this);
+    this->setWindowTitle("Mostrar vehiculo");
 }
 
 MostrarVehiculoUi::~MostrarVehiculoUi()
@@ -14,5 +16,12 @@ MostrarVehiculoUi::~MostrarVehiculoUi()
 }
 
 void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
-    ui->NombreText->setText(QString::fromStdString(veh.));
+
+    //TODO
+}
+
+void MostrarVehiculoUi::on_pushButton_clicked()
+{
+    close();
+
 }

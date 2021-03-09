@@ -13,395 +13,264 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QSlider" name="horizontalSliderMotor">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>200</y>
-     <width>160</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>80</number>
-   </property>
-   <property name="maximum">
-    <number>450</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="spinBoxMotor">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>190</y>
-     <width>44</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>80</number>
-   </property>
-   <property name="maximum">
-    <number>450</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelMotor">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>170</y>
-     <width>111</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Potencia motor</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelNombre">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>10</y>
-     <width>121</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nombre vehiculo</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEditNombre">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>113</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelRuedas">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>70</y>
-     <width>131</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Número de ruedas</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBoxRuedas">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>90</y>
-     <width>86</width>
-     <height>25</height>
-    </rect>
-   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <property name="text">
-     <string>2</string>
-    </property>
+    <widget class="QLabel" name="labelNombre">
+     <property name="text">
+      <string>Nombre vehiculo:</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>3</string>
-    </property>
+    <widget class="QLineEdit" name="lineEditNombre"/>
    </item>
    <item>
-    <property name="text">
-     <string>4</string>
-    </property>
+    <widget class="QLabel" name="labelRuedas">
+     <property name="text">
+      <string>Número de ruedas:</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>6</string>
-    </property>
+    <widget class="QComboBox" name="comboBoxRuedas">
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>40</string>
+      </property>
+     </item>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>40</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxMotor">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>130</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Motor</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxCombustible">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>220</y>
-     <width>111</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Combustible</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBoxCombustible">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>270</y>
-     <width>111</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Eléctrico</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxMotor">
+     <property name="text">
+      <string>Motor</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Gasolina</string>
-    </property>
+    <widget class="QLabel" name="labelMotor">
+     <property name="text">
+      <string>Potencia del motor:</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Diesel</string>
-    </property>
+    <widget class="QSpinBox" name="spinBoxMotor">
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::PlusMinus</enum>
+     </property>
+     <property name="minimum">
+      <number>80</number>
+     </property>
+     <property name="maximum">
+      <number>450</number>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Híbrido</string>
-    </property>
+    <widget class="QSlider" name="horizontalSliderMotor">
+     <property name="minimum">
+      <number>80</number>
+     </property>
+     <property name="maximum">
+      <number>450</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Queroseno</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="labelCombustible">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>250</y>
-     <width>121</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Tipo combustible</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelColor">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>470</y>
-     <width>67</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Color</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBoxColor">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>490</y>
-     <width>86</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Blanco</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxCombustible">
+     <property name="text">
+      <string>Combustible</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Negro</string>
-    </property>
+    <widget class="QLabel" name="labelCombustible">
+     <property name="text">
+      <string>Tipo de combustible:</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Rojo</string>
-    </property>
+    <widget class="QComboBox" name="comboBoxCombustible">
+     <item>
+      <property name="text">
+       <string>Eléctrico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gasolina</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Diesel</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Híbrido</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Queroseno</string>
+      </property>
+     </item>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Azul</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxAlas">
+     <property name="text">
+      <string>Alas</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Amarillo</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxReactores">
+     <property name="text">
+      <string>Reactores</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Verde</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="labelReparacion">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>520</y>
-     <width>101</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Reparación</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBoxReparacion">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>540</y>
-     <width>151</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Rueda repuesto</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxTrenAterrizaje">
+     <property name="text">
+      <string>Tren de aterrizaje</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <property name="text">
-     <string>Kit reparación</string>
-    </property>
+    <widget class="QCheckBox" name="checkBoxLocomotora">
+     <property name="text">
+      <string>Locomotora</string>
+     </property>
+    </widget>
    </item>
-  </widget>
-  <widget class="QLabel" name="labelMatricula">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>580</y>
-     <width>101</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Num matrícula</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonCrearCoche">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>640</y>
-     <width>89</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Crear coche</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEditMatricula">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>600</y>
-     <width>113</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxAlas">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>310</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Alas</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxReactores">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>340</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Reactores</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxTrenAterrizaje">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>370</y>
-     <width>121</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Tren aterrizaje</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBoxLocomotora">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>400</y>
-     <width>131</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Tiene locomotora</string>
-   </property>
-  </widget>
-  <widget class="QSlider" name="horizontalSliderVagones">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>440</y>
-     <width>160</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>5</number>
-   </property>
-   <property name="maximum">
-    <number>20</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
+   <item>
+    <widget class="QSpinBox" name="spinBox"/>
+   </item>
+   <item>
+    <widget class="QSlider" name="horizontalSliderVagones">
+     <property name="minimum">
+      <number>5</number>
+     </property>
+     <property name="maximum">
+      <number>20</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelColor">
+     <property name="text">
+      <string>Color:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="comboBoxColor">
+     <item>
+      <property name="text">
+       <string>Blanco</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Negro</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rojo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Azul</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Amarillo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Verde</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelReparacion">
+     <property name="text">
+      <string>Tipo de reparación:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="comboBoxReparacion">
+     <item>
+      <property name="text">
+       <string>Rueda repuesto</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kit reparación</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelMatricula">
+     <property name="text">
+      <string>Número de matrícula:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditMatricula">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonCrearCoche">
+     <property name="text">
+      <string>Crear coche</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

@@ -48,7 +48,9 @@ string Vehiculo::getMotor(){
         return "No";
     }
 }
-string Vehiculo::getPotencia();
+string Vehiculo::getPotencia(){
+    return to_string(potenciaMotor);
+}
 string Vehiculo::getCombustible(){
     if(combustible){
         return "Si";
@@ -240,6 +242,3 @@ bool Vehiculo::esTren() {
   (this->matricula == "");
 }
 
-string Vehiculo::getMatricula(){
-    return matricula;
-}

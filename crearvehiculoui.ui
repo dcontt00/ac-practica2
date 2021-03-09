@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>357</width>
-    <height>523</height>
+    <height>687</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -210,7 +210,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>300</y>
+     <y>470</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -223,7 +223,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>320</y>
+     <y>490</y>
      <width>86</width>
      <height>25</height>
     </rect>
@@ -263,7 +263,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>350</y>
+     <y>520</y>
      <width>101</width>
      <height>17</height>
     </rect>
@@ -276,7 +276,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>370</y>
+     <y>540</y>
      <width>151</width>
      <height>25</height>
     </rect>
@@ -296,7 +296,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>410</y>
+     <y>580</y>
      <width>101</width>
      <height>17</height>
     </rect>
@@ -309,7 +309,7 @@
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>490</y>
+     <y>640</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -322,13 +322,84 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>430</y>
+     <y>600</y>
      <width>113</width>
      <height>25</height>
     </rect>
    </property>
    <property name="readOnly">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxAlas">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alas</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxReactores">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>92</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reactores</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxTrenAterrizaje">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>370</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tren aterrizaje</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxLocomotora">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tiene locomotora</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="horizontalSliderVagones">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>160</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>5</number>
+   </property>
+   <property name="maximum">
+    <number>20</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
  </widget>

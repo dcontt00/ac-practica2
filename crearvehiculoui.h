@@ -5,7 +5,9 @@
 #include <QObject>
 #include <iostream>
 #include <string>
-
+#include <Vehiculo.h>
+#include <listavehiculos.h>
+#include <qstring.h>
 namespace Ui {
 class CrearVehiculoUi;
 }
@@ -17,6 +19,7 @@ class CrearVehiculoUi : public QWidget
 public:
     explicit CrearVehiculoUi(QWidget *parent = nullptr);
     ~CrearVehiculoUi();
+    string matricula;
 
 public slots:
     void on_horizontalSlider_valueChanged(int);

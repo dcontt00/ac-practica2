@@ -26,7 +26,7 @@ void CrearVehiculoUi::on_pushButton_clicked(){}
 void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 {
 //    QString nombre=ui->lineEditNombre->text();
-    int ruedas=ui->comboBoxRuedas->itemData(ui->comboBoxRuedas->currentIndex()).toInt();
+    int ruedas=(ui->comboBoxRuedas->itemData(ui->comboBoxRuedas->currentIndex())).toInt();
 //    bool motor=ui->checkBoxMotor->checkState();
 //    int potenciaMotor=ui->horizontalSliderMotor->value();
     std::cout<<ruedas;

@@ -2,6 +2,7 @@
 #define MOSTRARVEHICULOUI_H
 
 #include <QWidget>
+#include "Vehiculo.h"
 
 namespace Ui {
 class MostrarVehiculoUi;
@@ -14,6 +15,7 @@ class MostrarVehiculoUi : public QWidget
 public:
     explicit MostrarVehiculoUi(QWidget *parent = nullptr);
     ~MostrarVehiculoUi();
+    void setVehiculo(Vehiculo&);
 
 private:
     Ui::MostrarVehiculoUi *ui;

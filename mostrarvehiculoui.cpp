@@ -12,3 +12,7 @@ MostrarVehiculoUi::~MostrarVehiculoUi()
 {
     delete ui;
 }
+
+void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
+    ui->
+}

@@ -39,7 +39,7 @@
     <string>Color:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre">
+  <widget class="QLineEdit" name="NombreText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -50,6 +50,9 @@
      <width>311</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="labelRuedas">
@@ -208,7 +211,7 @@
     <string>Locomotora:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_2">
+  <widget class="QLineEdit" name="NumRuedasText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -220,8 +223,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_3">
+  <widget class="QLineEdit" name="MotorText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -233,8 +239,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_4">
+  <widget class="QLineEdit" name="PotenciaText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -246,8 +255,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_5">
+  <widget class="QLineEdit" name="CombText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -259,8 +271,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_6">
+  <widget class="QLineEdit" name="AlasText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -272,8 +287,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_7">
+  <widget class="QLineEdit" name="ReactoresText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -285,8 +303,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_8">
+  <widget class="QLineEdit" name="TipoCombText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -298,8 +319,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_9">
+  <widget class="QLineEdit" name="ColorText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -311,8 +335,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_10">
+  <widget class="QLineEdit" name="LocomotoraText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -324,8 +351,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_11">
+  <widget class="QLineEdit" name="NumVagonesText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -337,8 +367,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_12">
+  <widget class="QLineEdit" name="ReparacionText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -350,8 +383,11 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditNombre_13">
+  <widget class="QLineEdit" name="MatriculaText">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -362,6 +398,9 @@
      <width>171</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>

@@ -13,3 +13,8 @@ ListaUi::~ListaUi()
 {
     delete ui;
 }
+
+
+void ListaUi::setLista(ListaVehiculos& lista){
+    vehiculos = lista;
+}

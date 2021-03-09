@@ -16,6 +16,7 @@
 #include "crearvehiculoui.h"
 #include "mostrarvehiculoui.h"
 #include "listaui.h"
+#include "listavehiculos.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -32,7 +33,9 @@ public:
     QPushButton boton2;
     QPushButton boton3;
     QWidget ventanaPrincipal;
+    ListaVehiculos vehiculos;
     CrearVehiculoUi cui;
+    ListaUi lui;
 
 private slots:
     void on_pushButton_clicked();

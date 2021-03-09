@@ -6,6 +6,7 @@ ListaUi::ListaUi(QWidget *parent) :
     ui(new Ui::ListaUi)
 {
     ui->setupUi(this);
+    ui->listWidget->addItem("uwu");
 }
 
 ListaUi::~ListaUi()

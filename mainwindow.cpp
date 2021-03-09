@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     lui.setLista(vehiculos);
+    this->setWindowTitle("Vehiculos");
 }
 MainWindow::~MainWindow()
 {

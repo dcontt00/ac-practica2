@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>631</height>
+    <height>731</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>350</y>
+     <y>270</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -85,7 +85,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>310</y>
+     <y>230</y>
      <width>131</width>
      <height>17</height>
     </rect>
@@ -98,7 +98,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>510</y>
+     <y>560</y>
      <width>131</width>
      <height>17</height>
     </rect>
@@ -111,7 +111,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>470</y>
+     <y>520</y>
      <width>101</width>
      <height>17</height>
     </rect>
@@ -120,7 +120,7 @@
     <string>Reparación:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="labelMotor_2">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -133,7 +133,7 @@
     <string>Motor: </string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="labelCombustible_2">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -146,11 +146,11 @@
     <string>Combustible: </string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="labelAlas">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>230</y>
+     <y>300</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -159,11 +159,11 @@
     <string>Alas:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="labelReactores">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>270</y>
+     <y>340</y>
      <width>91</width>
      <height>17</height>
     </rect>
@@ -176,20 +176,20 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>550</y>
+     <y>600</y>
      <width>321</width>
      <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>Close</string>
+    <string>Cerrar</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="labelNumVagones">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>430</y>
+     <y>480</y>
      <width>171</width>
      <height>17</height>
     </rect>
@@ -198,11 +198,11 @@
     <string>Numero de Vagones:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="QLabel" name="labelLocomotora">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>390</y>
+     <y>440</y>
      <width>111</width>
      <height>17</height>
     </rect>
@@ -282,7 +282,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>230</y>
+     <y>300</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -298,7 +298,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>270</y>
+     <y>340</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -314,7 +314,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>310</y>
+     <y>230</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -330,7 +330,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>350</y>
+     <y>270</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -346,7 +346,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>390</y>
+     <y>440</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -362,7 +362,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>430</y>
+     <y>480</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -378,7 +378,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>470</y>
+     <y>520</y>
      <width>171</width>
      <height>25</height>
     </rect>
@@ -394,7 +394,33 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>510</y>
+     <y>560</y>
+     <width>171</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTrenAterrizaje">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>390</y>
+     <width>111</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tren aterrizaje</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>390</y>
      <width>171</width>
      <height>25</height>
     </rect>

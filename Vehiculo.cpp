@@ -57,10 +57,10 @@ string Vehiculo::getCombustible(){
     }
 }
 string Vehiculo::getTipoCombustible(){
-
+    return tipoCombustible;
 }
 string Vehiculo::getColor(){
-
+    return color;
 }
 string Vehiculo::getAlas(){
     if(alas){

@@ -14,5 +14,5 @@ MostrarVehiculoUi::~MostrarVehiculoUi()
 }
 
 void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
-    ui->
+    //TODO
 }

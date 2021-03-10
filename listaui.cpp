@@ -26,7 +26,8 @@ void ListaUi::setLista(ListaVehiculos* lista){
 void ListaUi::on_listWidget_itemClicked(QListWidgetItem *item)
 {
      //TODO: Asignar para cada item que se abra una ventana mostrarVehiculo del vehiculo
-    Vehiculo &veh=vehiculos->getLista().at(ui->listWidget->selectedItems().indexOf(item));
+    Vehiculo &veh=vehiculos->getLista().at(ui->listWidget->currentRow());
+    cout<<veh.getNombre();
     mostrarVehiculo.setVehiculo(veh);
     mostrarVehiculo.show();
 }

@@ -17,7 +17,6 @@ MostrarVehiculoUi::~MostrarVehiculoUi()
 
 void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
     //TODO Comprobar
-    cout<<veh.getNombre();
     ui->NombreText->clear();
     ui->NombreText->setText(QString::fromStdString(veh.getNombre()));
     ui->NumRuedasText->clear();

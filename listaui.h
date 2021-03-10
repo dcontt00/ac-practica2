@@ -7,6 +7,7 @@
 #include <qlistwidget.h>
 #include <QListWidgetItem>
 #include <iostream>
+#include <vector>
 using namespace std;
 namespace Ui {
 class ListaUi;

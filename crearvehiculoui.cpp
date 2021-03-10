@@ -33,6 +33,9 @@ CrearVehiculoUi::~CrearVehiculoUi()
     delete ui;
 }
 
+void CrearVehiculoUi::setLista(ListaVehiculos& lista){
+    vehiculos = lista;
+}
 
 void CrearVehiculoUi::on_horizontalSlider_valueChanged(int value){}
 
@@ -59,7 +62,8 @@ void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 
 
     Vehiculo vehiculo(nombre.toStdString(),ruedas,motor,potenciaMotor,combustible,tipoCombustible.toStdString(),color.toStdString(),alas,reactores,trenAterrizaje,locomotora,vagones,reparacion.toStdString(),matricula);
-
+    vehiculos.aniadirVehiculo(vehiculo);
+    cout << vehiculo.getNombre() << endl;
 }
 
 void CrearVehiculoUi::on_horizontalSliderMotor_valueChanged(int value)

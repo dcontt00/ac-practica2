@@ -9,7 +9,7 @@ vector <Vehiculo> ListaVehiculos::getLista(){
     return lista;
 }
 
-void ListaVehiculos::aniadirVehiculo(Vehiculo vehiculo){
+void ListaVehiculos::aniadirVehiculo(Vehiculo& vehiculo){
     lista.push_back(vehiculo);
     numVehiculos++;
 }

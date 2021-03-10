@@ -13,7 +13,7 @@ private:
 public:
     ListaVehiculos();
     vector <Vehiculo> getLista();
-    void aniadirVehiculo(Vehiculo);
+    void aniadirVehiculo(Vehiculo&);
 };
 
 #endif // LISTAVEHICULOS_H

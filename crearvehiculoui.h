@@ -19,6 +19,7 @@ class CrearVehiculoUi : public QWidget
 public:
     explicit CrearVehiculoUi(QWidget *parent = nullptr);
     ~CrearVehiculoUi();
+    void setLista(ListaVehiculos&);
     string matricula;
 
 public slots:
@@ -36,6 +37,7 @@ public slots:
 
 private:
     Ui::CrearVehiculoUi *ui;
+    ListaVehiculos vehiculos;
 };
 
 #endif // CREARVEHICULOUI_H

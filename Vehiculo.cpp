@@ -33,6 +33,7 @@ Vehiculo::Vehiculo(string nbr, int nR, bool mtr, int pM, bool cbl, string tC, st
     numVagones = nV;
     reparacion = rpc;
     matricula = mtl;
+    this->setTipo();
 }
 
 string Vehiculo::getNombre(){
@@ -103,6 +104,10 @@ string Vehiculo::getMatricula(){
     return matricula;
 }
 
+string Vehiculo::getTipo(){
+    return tipo;
+}
+
 /**
  * Combrueba si es una bicicleta
  * @return
@@ -118,8 +123,7 @@ bool Vehiculo::esBicicleta() {
     !this->trenAterrizaje &&
     !this->locomotora &&
     (this->numVagones == 0) &&
-    (this->reparacion == "kit de reparacion de pinchazos") &&
-    (this->matricula == "");
+    (this->reparacion == "Kit reparación");
 }
 
 /**
@@ -137,8 +141,7 @@ bool Vehiculo::esTriciclo() {
            !this->trenAterrizaje &&
            !this->locomotora &&
            (this->numVagones == 0) &&
-           (this->reparacion == "kit de reparacion de pinchazos") &&
-           (this->matricula == "");
+           (this->reparacion == "Kit reparación");
 }
 
 /**
@@ -157,8 +160,7 @@ bool Vehiculo::esMotocicleta() {
     !this->trenAterrizaje &&
     !this->locomotora &&
     (this->numVagones == 0) &&
-    (this->reparacion == "kit de reparacion de pinchazos") &&
-    (this->matricula == "");
+    (this->reparacion == "Kit reparación");
 }
 
 /**
@@ -177,8 +179,7 @@ bool Vehiculo::esCoche() {
     !this->trenAterrizaje &&
     !this->locomotora &&
     (this->numVagones == 0) &&
-    (this->reparacion == "Rueda de repuesto") &&
-    (this->matricula == "");
+    (this->reparacion == "Rueda repuesto");
 }
 
 /**
@@ -197,8 +198,7 @@ bool Vehiculo::esCocheDeportivo() {
     !this->trenAterrizaje &&
     !this->locomotora &&
     (this->numVagones == 0) &&
-    (this->reparacion == "kit de reparacion de pinchazos") &&
-    (this->matricula == "");
+    (this->reparacion == "Kit reparación");
 }
 
 /**
@@ -217,8 +217,7 @@ bool Vehiculo::esAvion() {
     this->trenAterrizaje &&
     !this->locomotora &&
     (this->numVagones == 0) &&
-    (this->reparacion == "Rueda de repuesto") &&
-    (this->matricula == "");
+    (this->reparacion == "Rueda repuesto");
 
 }
 
@@ -238,7 +237,24 @@ bool Vehiculo::esTren() {
   !this->trenAterrizaje &&
   this->locomotora &&
   (this->numVagones >= 5 && this->numVagones <= 20) &&
-  (this->reparacion == "Rueda de repuesto") &&
-  (this->matricula == "");
+  (this->reparacion == "Rueda repuesto");
+}
+
+void Vehiculo::setTipo(){
+    if(this->esBicicleta()){
+        tipo = "Bicicleta";
+    }else if(this->esTriciclo()){
+        tipo = "Triciclo";
+    }else if(this->esMotocicleta()){
+        tipo = "Motocicleta";
+    }else if(this->esCoche()){
+        tipo = "Coche";
+    }else if(this->esCocheDeportivo()){
+        tipo = "Coche Deportivo";
+    }else if(this->esAvion()){
+        tipo = "Avion";
+    }else if(this->esTren()){
+        tipo = "Tren";
+    }
 }
 

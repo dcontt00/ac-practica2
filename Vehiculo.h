@@ -23,6 +23,8 @@ private:
     int numVagones;
     string reparacion;
     string matricula;
+    string tipo;
+    void setTipo();
 
 
 public:
@@ -41,6 +43,7 @@ public:
     string getNumVagones();
     string getReparacion();
     string getMatricula();
+    string getTipo();
     bool esBicicleta();
     bool esTriciclo();
     bool esMotocicleta();

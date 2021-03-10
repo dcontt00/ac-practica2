@@ -12,7 +12,7 @@ private:
     int numVehiculos;
 public:
     ListaVehiculos();
-    vector <Vehiculo> getLista();
+    vector<Vehiculo>& getLista();
     void aniadirVehiculo(Vehiculo&);
 };
 

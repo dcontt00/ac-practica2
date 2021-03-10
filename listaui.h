@@ -20,7 +20,7 @@ class ListaUi : public QWidget
 public:
     explicit ListaUi(QWidget *parent = nullptr);
     ~ListaUi();
-    void setLista(ListaVehiculos&);
+    void setLista(ListaVehiculos*);
     MostrarVehiculoUi mostrarVehiculo;
 
 private slots:
@@ -28,7 +28,7 @@ private slots:
 
 private:
     Ui::ListaUi *ui;
-    ListaVehiculos vehiculos;
+    ListaVehiculos* vehiculos;
     MostrarVehiculoUi mvui;
 
 };

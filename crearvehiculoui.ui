@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>357</width>
-    <height>687</height>
+    <height>670</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -273,5 +273,22 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonCrearCoche</sender>
+   <signal>released()</signal>
+   <receiver>CrearVehiculoUi</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

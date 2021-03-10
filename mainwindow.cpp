@@ -7,7 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    lui.setLista(vehiculos);
+
+
     this->setWindowTitle("Vehiculos");
 }
 MainWindow::~MainWindow()
@@ -19,12 +20,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+    cui.setLista(&vehiculos);
     cui.show();
-
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
+
+    lui.setLista(&vehiculos);
     lui.show();
 }
 

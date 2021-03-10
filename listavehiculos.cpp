@@ -5,7 +5,7 @@ ListaVehiculos::ListaVehiculos()
     numVehiculos=0;
 }
 
-vector <Vehiculo> ListaVehiculos::getLista(){
+vector<Vehiculo>& ListaVehiculos::getLista(){
     return lista;
 }
 

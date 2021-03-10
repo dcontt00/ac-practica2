@@ -99,5 +99,6 @@ void CrearVehiculoUi::generarMatricula(){
 
         output.push_back(c);
     }
+    matricula = output;
     ui->lineEditMatricula->setText(QString::fromStdString(output));
 }

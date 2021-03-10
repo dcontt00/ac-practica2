@@ -41,6 +41,10 @@ void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
     ui->NumVagonesText->setText(QString::fromStdString(veh.getNumVagones()));
     ui->MatriculaText->clear();
     ui->MatriculaText->setText(QString::fromStdString(veh.getMatricula()));
+    ui->lineEdit->clear();
+    ui->lineEdit->setText(QString::fromStdString(veh.getTrenAterrizaje()));
+    ui->ReparacionText->clear();
+    ui->ReparacionText->setText(QString::fromStdString(veh.getReparacion()));
     ui->lineEditCategoria->clear();
     ui->lineEditCategoria->setText(QString::fromStdString(veh.getTipo()));
 }

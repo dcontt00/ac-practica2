@@ -35,6 +35,9 @@ public slots:
 
     void on_spinBoxMotor_valueChanged(int);
 
+private slots:
+    void on_pushButtonCrearCoche_released();
+
 private:
     Ui::CrearVehiculoUi *ui;
     ListaVehiculos *vehiculos;

@@ -35,6 +35,15 @@ CrearVehiculoUi::~CrearVehiculoUi()
 
 void CrearVehiculoUi::setLista(ListaVehiculos* lista){
     vehiculos = lista;
+    ui->lineEditNombre->clear();
+    ui->checkBoxMotor->setChecked(false);
+    ui->horizontalSliderMotor->setValue(80);
+    ui->checkBoxCombustible->setChecked(false);
+    ui->checkBoxAlas->setChecked(false);
+    ui->checkBoxTrenAterrizaje->setChecked(false);
+    ui->checkBoxReactores->setChecked(false);
+    ui->checkBoxLocomotora->setChecked(false);
+    ui->horizontalSliderMotor->setValue(0);
 }
 
 void CrearVehiculoUi::on_horizontalSlider_valueChanged(int value){}
@@ -74,4 +83,9 @@ void CrearVehiculoUi::on_horizontalSliderMotor_valueChanged(int value)
 void CrearVehiculoUi::on_spinBoxMotor_valueChanged(int arg1)
 {
     ui->horizontalSliderMotor->setValue(arg1);
+}
+
+void CrearVehiculoUi::on_pushButtonCrearCoche_released()
+{
+    close();
 }

@@ -273,22 +273,5 @@
   </layout>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButtonCrearCoche</sender>
-   <signal>released()</signal>
-   <receiver>CrearVehiculoUi</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>178</x>
-     <y>665</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>178</x>
-     <y>343</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

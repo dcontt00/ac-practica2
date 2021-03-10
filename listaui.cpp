@@ -26,6 +26,6 @@ void ListaUi::setLista(ListaVehiculos* lista){
 void ListaUi::on_listWidget_itemClicked(QListWidgetItem *item)
 {
      //TODO: Asignar para cada item que se abra una ventana mostrarVehiculo del vehiculo
-    mostrarVehiculo.setVehiculo(vehiculos->getLista().at(ui->listWidget->selectedItems().indexOf(&(*item))));
+    mostrarVehiculo.setVehiculo(vehiculos->getLista().at(ui->listWidget->selectedItems().indexOf(item)));
     mostrarVehiculo.show();
 }

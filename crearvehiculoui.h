@@ -21,6 +21,7 @@ public:
     ~CrearVehiculoUi();
     void setLista(ListaVehiculos*);
     string matricula;
+    void generarMatricula();
 
 public slots:
 

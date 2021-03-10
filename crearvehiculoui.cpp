@@ -8,24 +8,12 @@ CrearVehiculoUi::CrearVehiculoUi(QWidget *parent) :
     ui(new Ui::CrearVehiculoUi)
 {
     srand(time(NULL));
-    for(int i=0;i<4;i++){
-        int num=rand()%9;
-        matricula.append(to_string(num));
-    }
 
-    char c;
-    int r;
-    for(int i=0;i<3;i++){
-        r = rand() % 26;
-        c = 'A' + r;
-
-        matricula.push_back(c);
-    }
 
 
     ui->setupUi(this);
     this->setWindowTitle("Crear vehiculo");
-    ui->lineEditMatricula->setText(QString::fromStdString(matricula));
+
 }
 
 CrearVehiculoUi::~CrearVehiculoUi()
@@ -94,4 +82,22 @@ void CrearVehiculoUi::on_spinBoxVagones_valueChanged(int arg1)
 {
     ui->horizontalSliderVagones->setValue(arg1);
 
+}
+
+void CrearVehiculoUi::generarMatricula(){
+    string output;
+    for(int i=0;i<4;i++){
+        int num=rand()%9;
+        output.append(to_string(num));
+    }
+
+    char c;
+    int r;
+    for(int i=0;i<3;i++){
+        r = rand() % 26;
+        c = 'A' + r;
+
+        output.push_back(c);
+    }
+    ui->lineEditMatricula->setText(QString::fromStdString(output));
 }

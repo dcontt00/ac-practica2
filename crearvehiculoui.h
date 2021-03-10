@@ -24,8 +24,6 @@ public:
 
 public slots:
 
-    void on_pushButton_clicked();
-
     void on_pushButtonCrearCoche_clicked();
 
     void on_horizontalSliderMotor_valueChanged(int);
@@ -33,6 +31,7 @@ public slots:
     void on_spinBoxMotor_valueChanged(int);
 
 private slots:
+
     void on_pushButtonCrearCoche_released();
 
     void on_horizontalSliderVagones_valueChanged(int value);

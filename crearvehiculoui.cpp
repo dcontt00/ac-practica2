@@ -47,7 +47,6 @@ void CrearVehiculoUi::setLista(ListaVehiculos* lista){
 }
 
 
-
 void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 {
     QString nombre=ui->lineEditNombre->text();
@@ -80,6 +79,7 @@ void CrearVehiculoUi::on_spinBoxMotor_valueChanged(int arg1)
     ui->horizontalSliderMotor->setValue(arg1);
 }
 
+
 void CrearVehiculoUi::on_pushButtonCrearCoche_released()
 {
     close();
@@ -93,4 +93,5 @@ void CrearVehiculoUi::on_horizontalSliderVagones_valueChanged(int value)
 void CrearVehiculoUi::on_spinBoxVagones_valueChanged(int arg1)
 {
     ui->horizontalSliderVagones->setValue(arg1);
+
 }

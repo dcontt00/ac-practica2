@@ -23,9 +23,6 @@ public:
     string matricula;
 
 public slots:
-    void on_horizontalSlider_valueChanged(int);
-
-    void on_spinBox_valueChanged(int);
 
     void on_pushButton_clicked();
 
@@ -37,6 +34,10 @@ public slots:
 
 private slots:
     void on_pushButtonCrearCoche_released();
+
+    void on_horizontalSliderVagones_valueChanged(int value);
+
+    void on_spinBoxVagones_valueChanged(int arg1);
 
 private:
     Ui::CrearVehiculoUi *ui;

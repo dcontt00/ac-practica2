@@ -46,10 +46,6 @@ void CrearVehiculoUi::setLista(ListaVehiculos* lista){
     ui->horizontalSliderMotor->setValue(0);
 }
 
-void CrearVehiculoUi::on_horizontalSlider_valueChanged(int value){}
-
-void CrearVehiculoUi::on_spinBox_valueChanged(int value){}
-
 void CrearVehiculoUi::on_pushButton_clicked(){}
 
 
@@ -85,7 +81,18 @@ void CrearVehiculoUi::on_spinBoxMotor_valueChanged(int arg1)
     ui->horizontalSliderMotor->setValue(arg1);
 }
 
+
 void CrearVehiculoUi::on_pushButtonCrearCoche_released()
 {
     close();
+}
+
+void CrearVehiculoUi::on_spinBoxVagones_valueChanged(int arg1)
+{
+    ui->horizontalSliderVagones->setValue(arg1);
+}
+
+void CrearVehiculoUi::on_horizontalSliderVagones_valueChanged(int value)
+{
+    ui->spinBoxVagones->setValue(value);
 }

@@ -172,6 +172,13 @@
     </widget>
    </item>
    <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Número de vagones:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QSpinBox" name="spinBoxVagones"/>
    </item>
    <item>

@@ -39,7 +39,6 @@ void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 {
     QString nombre=ui->lineEditNombre->text();
     int ruedas=ui->comboBoxRuedas->currentText().toInt();
-    cout<<ruedas<<endl;
     bool motor=ui->checkBoxMotor->checkState();
     int potenciaMotor=ui->horizontalSliderMotor->value();
     bool combustible=ui->checkBoxCombustible->checkState();
@@ -53,9 +52,21 @@ void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
     QString reparacion=ui->comboBoxReparacion->currentText();
 
 
+    if(motor==false){
+        potenciaMotor=0;
+    }
+
+    if(combustible==false){
+        cout<<"kjdsalksdj"<<endl;
+        tipoCombustible="";
+    }
+
+    if(locomotora==false){
+        vagones=0;
+    }
+
     Vehiculo vehiculo(nombre.toStdString(),ruedas,motor,potenciaMotor,combustible,tipoCombustible.toStdString(),color.toStdString(),alas,reactores,trenAterrizaje,locomotora,vagones,reparacion.toStdString(),matricula);
     vehiculos->aniadirVehiculo(vehiculo);
-    cout << vehiculo.getNombre() << endl;
 }
 
 void CrearVehiculoUi::on_horizontalSliderMotor_valueChanged(int value)

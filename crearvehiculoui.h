@@ -39,6 +39,8 @@ private slots:
 
     void on_spinBoxVagones_valueChanged(int arg1);
 
+    void on_checkBoxMotor_stateChanged(int arg1);
+
 private:
     Ui::CrearVehiculoUi *ui;
     ListaVehiculos *vehiculos;

@@ -255,6 +255,8 @@ void Vehiculo::setTipo(){
         tipo = "Avion";
     }else if(this->esTren()){
         tipo = "Tren";
+    }else{
+        tipo="otra cosa";
     }
 }
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>357</width>
-    <height>670</height>
+    <width>219</width>
+    <height>686</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -168,6 +168,13 @@
     <widget class="QCheckBox" name="checkBoxLocomotora">
      <property name="text">
       <string>Locomotora</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Número de vagones:</string>
      </property>
     </widget>
    </item>

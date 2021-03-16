@@ -46,6 +46,7 @@ void MostrarVehiculoUi::setVehiculo(Vehiculo& veh){
     ui->ReparacionText->clear();
     ui->ReparacionText->setText(QString::fromStdString(veh.getReparacion()));
     ui->lineEditCategoria->clear();
+    cout<<veh.getTipo();
     ui->lineEditCategoria->setText(QString::fromStdString(veh.getTipo()));
 }
 

@@ -34,6 +34,7 @@ void CrearVehiculoUi::setLista(ListaVehiculos* lista){
     ui->horizontalSliderMotor->setValue(0);
 }
 
+void CrearVehiculoUi::on_checkBoxMotor_stateChanged(int arg1){};
 
 void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 {

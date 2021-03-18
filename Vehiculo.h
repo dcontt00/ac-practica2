@@ -51,7 +51,8 @@ public:
     bool esCocheDeportivo();
     bool esAvion();
     bool esTren();
-
+    bool esMaglev();
+    void setMatricula(string);
 };
 
 #endif // VEHICULO_H

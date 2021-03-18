@@ -240,6 +240,21 @@ bool Vehiculo::esTren() {
   (this->reparacion == "Rueda repuesto");
 }
 
+bool Vehiculo::esMaglev() {
+    return (this->numRuedas == 0) &&
+    this->motor &&
+    (this->potenciaMotor == 450) &&
+    this->combustible &&
+    (this->tipoCombustible == "Eléctrico") &&
+    (this->color == "Negro") &&
+    !this->alas &&
+    !this->reactores &&
+    !this->trenAterrizaje &&
+    this->locomotora &&
+    (this->numVagones >= 5 && this->numVagones <= 20) &&
+    (this->reparacion != "Rueda repuesto");
+}
+
 void Vehiculo::setTipo(){
     if(this->esBicicleta()){
         tipo = "Bicicleta";
@@ -255,8 +270,13 @@ void Vehiculo::setTipo(){
         tipo = "Avion";
     }else if(this->esTren()){
         tipo = "Tren";
+    }else if(this->esMaglev()){
+        tipo="Maglev tren";
     }else{
         tipo="otra cosa";
     }
 }
 
+void Vehiculo::setMatricula(string mat){
+    this->matricula = mat;
+}

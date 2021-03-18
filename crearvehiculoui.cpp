@@ -67,6 +67,9 @@ void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
     }
 
     Vehiculo vehiculo(nombre.toStdString(),ruedas,motor,potenciaMotor,combustible,tipoCombustible.toStdString(),color.toStdString(),alas,reactores,trenAterrizaje,locomotora,vagones,reparacion.toStdString(),matricula);
+    if (vehiculo.getTipo()=="MAGLEV"){
+        vehiculo.setMatricula(generarMatriculaMAGLEV());
+    }
     vehiculos->aniadirVehiculo(vehiculo);
 }
 
@@ -114,4 +117,20 @@ void CrearVehiculoUi::generarMatricula(){
     }
     matricula = output;
     ui->lineEditMatricula->setText(QString::fromStdString(output));
+}
+string CrearVehiculoUi::generarMatriculaMAGLEV(){
+    string output;
+    for(int i=0;i<4;i++){
+        int num=rand()%9;
+        output.append(to_string(num));
+    }
+
+
+
+    output.push_back("T");
+    output.push_back("R");
+    output.push_back("A");
+
+
+    return output;
 }

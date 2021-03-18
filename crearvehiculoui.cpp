@@ -34,7 +34,6 @@ void CrearVehiculoUi::setLista(ListaVehiculos* lista){
     ui->horizontalSliderMotor->setValue(0);
 }
 
-void CrearVehiculoUi::on_checkBoxMotor_stateChanged(int arg1){};
 
 void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
 {
@@ -67,9 +66,7 @@ void CrearVehiculoUi::on_pushButtonCrearCoche_clicked()
     }
 
     Vehiculo vehiculo(nombre.toStdString(),ruedas,motor,potenciaMotor,combustible,tipoCombustible.toStdString(),color.toStdString(),alas,reactores,trenAterrizaje,locomotora,vagones,reparacion.toStdString(),matricula);
-    if (vehiculo.getTipo()=="MAGLEV"){
-        vehiculo.setMatricula(generarMatriculaMAGLEV());
-    }
+
     vehiculos->aniadirVehiculo(vehiculo);
 }
 
@@ -127,10 +124,22 @@ string CrearVehiculoUi::generarMatriculaMAGLEV(){
 
 
 
-    output.push_back("T");
-    output.push_back("R");
-    output.push_back("A");
+    output.push_back('T');
+    output.push_back('R');
+    output.push_back('A');
 
 
     return output;
+}
+
+
+void CrearVehiculoUi::on_comboBoxRuedas_currentTextChanged(const QString &arg1)
+{
+    if(arg1=="0"){
+        matricula=generarMatriculaMAGLEV();
+        ui->lineEditMatricula->setText(QString::fromStdString(matricula));
+
+    }else{generarMatricula();
+        ui->lineEditMatricula->setText(QString::fromStdString(matricula));
+    }
 }

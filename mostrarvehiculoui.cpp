@@ -54,3 +54,5 @@ void MostrarVehiculoUi::on_pushButton_clicked()
 {
     close();
 }
+
+

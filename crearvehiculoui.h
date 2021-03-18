@@ -22,6 +22,7 @@ public:
     void setLista(ListaVehiculos*);
     string matricula;
     void generarMatricula();
+    string generarMatriculaMAGLEV();
 
 public slots:
 
@@ -39,7 +40,8 @@ private slots:
 
     void on_spinBoxVagones_valueChanged(int arg1);
 
-    void on_checkBoxMotor_stateChanged(int arg1);
+
+    void on_comboBoxRuedas_currentTextChanged(const QString &arg1);
 
 private:
     Ui::CrearVehiculoUi *ui;

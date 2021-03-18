@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>219</width>
-    <height>686</height>
+    <height>693</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,6 +33,17 @@
    </item>
    <item>
     <widget class="QComboBox" name="comboBoxRuedas">
+     <property name="currentText">
+      <string>2</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
      <item>
       <property name="text">
        <string>2</string>
